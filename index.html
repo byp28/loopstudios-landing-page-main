@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Loopstudios landing page</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+  <header class="w-full py-10 px-25 flex items-center gap-25 justify-between z-5 fixed">
+    <button id="open-menu" class="hidden max-lg:block">
+      <img src="./images/icon-hamburger.svg" alt="">
+    </button>
+    <h1 class="max-lg:w-[95%] max-lg:flex max-lg:items-center max-lg:justify-center"><a href="#"><img src="./images/logo.svg" alt="logo"></a></h1>
+    <nav class="max-lg:hidden">
+      <ul class="flex gap-8 h-8 text-white font-semibold">
+        <li class="relative cursor-pointer hover:before:absolute hover:before:content-[' '] hover:before:w-5 hover:before:h-1 hover:before:left-3 hover:before:bottom-0  hover:before:bg-white">About</li>
+        <li class="relative cursor-pointer hover:before:absolute hover:before:content-[' '] hover:before:w-5 hover:before:h-1 hover:before:left-2 hover:before:bottom-0  hover:before:bg-white">Careers</li>
+        <li class="relative cursor-pointer hover:before:absolute hover:before:content-[' '] hover:before:w-5 hover:before:h-1 hover:before:left-3 hover:before:bottom-0  hover:before:bg-white">Events</li>
+        <li class="relative cursor-pointer hover:before:absolute hover:before:content-[' '] hover:before:w-5 hover:before:h-1 hover:before:bottom-0 hover:before:left-4 hover:before:bg-white">Products</li>
+        <li class="relative cursor-pointer hover:before:absolute hover:before:content-[' '] hover:before:w-5 hover:before:h-1 hover:before:bottom-0 hover:before:left-4 hover:before:bg-white">Support</li>
+      </ul>
+    </nav>
+  </header>
+  <main class="flex flex-col">
+    <section class="min-h-130 relative">
+      <img src="./images/desktop/image-hero.jpg" alt="hero">
+      <div class="absolute bottom-20 left-25 p-10 w-150 min-h-50 border-2 border-white z-2 text-white text-6xl">
+        Immersive experiences that deliver
+      </div>
+    </section>
+    <section class="w-full p-25 min-h-screen relative">
+      <img src="./images/desktop/image-interactive.jpg" alt="">
+      <div class="w-170 min-h-100 px-25 py-15 text-black bg-white absolute bottom-0 right-0 flex flex-col gap-10">
+        <h2 class="text-5xl">The leader in interactive VR</h2>
+        <p class="text-neutral-500">
+          Founded in 2011, Loopstudios has been producing world-class virtual reality 
+          projects for some of the best companies around the globe. Our award-winning 
+          creations have transformed businesses through digital experiences that bind 
+          to their brand.
+        </p>
+      </div>
+    </section>
+    <section class="w-full flex flex-col p-25 min-h-screen gap-15">
+      <div class="w-full flex items-center justify-between">
+        <h3 class="text-4xl uppercase">Our creations</h3>
+        <button class="cursor-pointer uppercase w-30 h-12 border-1 border-black hover:bg-black hover:text-white">See all</button>
+      </div>
+      <div class="w-full flex flex-wrap gap-10 justify-between">
+        <div class="w-[22%] relative">
+          <img src="./images/desktop/image-deep-earth.jpg" alt="earth">
+          <p class="w-full h-full p-5 absolute bottom-0 text-white text-4xl content-end hover:bg-white/75 hover:text-black cursor-pointer">Deep earth</p>
+        </div>
+        <div class="w-[22%] relative">
+          <img src="./images/desktop/image-night-arcade.jpg" alt="night">
+          <p class="w-full h-full p-5 absolute bottom-0 text-white text-4xl content-end hover:bg-white/75 hover:text-black cursor-pointer">Night arcade</p>
+        </div>
+        <div class="w-[22%] relative">
+          <img src="./images/desktop/image-soccer-team.jpg" alt="soccer">
+          <p class="w-full h-full p-5 absolute bottom-0 text-white text-4xl content-end hover:bg-white/75 hover:text-black cursor-pointer">Soccer team VR</p>
+        </div>
+        <div class="w-[22%] relative">
+          <img src="./images/desktop/image-grid.jpg" alt="grid">
+          <p class="w-full h-full p-5 absolute bottom-0 text-white text-4xl content-end hover:bg-white/75 hover:text-black cursor-pointer">The grid</p>
+        </div>
+        <div class="w-[22%] relative">
+          <img src="./images/desktop/image-from-above.jpg" alt="above">
+          <p class="w-full h-full p-5 absolute bottom-0 text-white text-4xl content-end hover:bg-white/75 hover:text-black cursor-pointer">From up above VR</p>
+        </div>
+        <div class="w-[22%] relative">
+          <img src="./images/desktop/image-pocket-borealis.jpg" alt="pocket">
+          <p class="w-full h-full p-5 absolute bottom-0 text-white text-4xl content-end hover:bg-white/75 hover:text-black cursor-pointer">Pocket borealis</p>
+        </div>
+        <div class="w-[22%] relative">
+          <img src="./images/desktop/image-curiosity.jpg" alt="curiosity">
+          <p class="w-full h-full p-5 absolute bottom-0 text-white text-4xl content-end hover:bg-white/75 hover:text-black cursor-pointer">The curiosity</p>
+        </div>
+        <div class="w-[22%] relative">
+          <img src="./images/desktop/image-fisheye.jpg" alt="fisheye">
+          <p class="w-full h-full p-5 absolute bottom-0 text-white text-4xl content-end hover:bg-white/75 hover:text-black cursor-pointer">Make it fisheye</p>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-black w-full min-h-25 px-25 py-10 flex items-center justify-between">
+      <div class="flex flex-col gap-5">
+        <a href="#"><img src="./images/logo.svg" alt="logo"></a>
+        <ul class="flex gap-5 text-white font-semibold">
+          <li>About</li>
+          <li>Careers</li>
+          <li>Events</li>
+          <li>Products</li>
+          <li>Support</li>
+        </ul>
+      </div>
+      <div class="flex flex-col gap-5">
+        <ul class="flex gap-5 text-white font-semibold self-end">
+          <li><img src="./images/icon-facebook.svg" alt="facebook"></li>
+          <li><img src="./images/icon-twitter.svg" alt="twitter"></li>
+          <li><img src="./images/icon-pinterest.svg" alt="pinterest"></li>
+          <li><img src="./images/icon-instagram.svg" alt="insta"></li>
+        </ul>
+        <p class="text-white font-semibold">© 2021 Loopstudios. All rights reserved.</p>
+      </div>
+    </footer>
+  </main>
+
+
+
+</body>
+</html>
